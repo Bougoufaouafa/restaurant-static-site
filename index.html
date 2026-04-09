@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Délice</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe') center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    background: rgba(0,0,0,0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    opacity: 0.7;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🍽 Restaurant Délice</h1>
+</header>
+
+<div class="section">
+    <h2>📜 Notre Menu</h2>
+    <div class="menu">
+        <div class="card">🍕 Pizza - 800 DA</div>
+        <div class="card">🍔 Burger - 600 DA</div>
+        <div class="card">🍝 Pâtes - 700 DA</div>
+        <div class="card">🥗 Salade - 400 DA</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🏠 Notre Salle</h2>
+    <div class="menu">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+    </div>
+</div>
+
+<div class="section">
+    <h2>📍 Localisation</h2>
+    <iframe 
+        src="https://maps.google.com/maps?q=alger&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300">
+    </iframe>
+</div>
+
+<footer>
+    © 2026 Restaurant Délice - Static Site
+</footer>
+
+</body>
+</html>
